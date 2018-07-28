@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Snake Game</title>
+	<link rel="stylesheet" type="text/css" href="snake.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+</head>
+
+
+<body>
+	
+	<audio id='buttonk' src="button.mp3">
+	</audio> 
+	<audio id='apple1' src="crunchapple.wav">
+	</audio>
+	<audio id='apple2' src="biteapple.wav">
+	</audio>
+	<audio id='milk' src="bottle.wav">
+	</audio>
+	<audio id='milkbar' src="milkbarfill.wav">
+	</audio>
+	<audio id='gameover' src="game_over.wav">
+	</audio>
+	<div class='container' id='container'>
+		<div  class='scoreboard'> 
+			<div id='score' class='score'>
+				<span>score   : <span id='scorevalue'>0</span><br></span><br>
+				<span>cookies : <span id='cookievalue'>0</span><br></span><br>
+				<span>milk    : <span id='milkvalue'>0</span><br></span><br>
+				<span>milkbar : <span id='milkbarvalue'>0</span></span><br>
+			</div>
+			
+			
+		</div>
+		<div id='board' class='board'>	</div>
+		<div  class='barboard'> 
+			<div class='bartext'>
+				<p>Milk </p>
+			</div>
+			<div id='bar' class='bar'>
+			<div class='barpart'></div>
+			<div class='barpart'></div>
+			<div class='barpart'></div>
+			<div class='barpart'></div>
+			<div class='barpart'></div>
+			</div>
+		</div>
+
+	<div class='lastpage reloadpage'>
+		<div>
+			<table class='lastPageTable'>
+		 	<tr>
+		 		<td>Your Score</td>
+		 		<td><p id='totalscore'>0000</p></td>
+		 		
+		 	</tr>
+		 	<tr>
+		 		<td>Cookies</td>
+		 		<td><p id='totalcookies'>00</p></td>
+		 		
+		 	</tr>
+		 	<tr>
+		 		<td>Milk</td>
+		 		<td><p id='totalmilk'>00</p></td>
+		 		
+		 	</tr>
+		 	<tr>
+		 		<td>Milk bar  </td>
+		 		<td><p id='totalmilkbar'>0</p></td>
+		 	</tr>
+			 </table>
+			<p id='comment'>Helloo</p>
+		</div>
+		<div><br><button id='reloadbutton'>Start Again</button>
+		</div>
+	</div>
+
+	<div class='settingpage speeddiffpage'>
+		<div class='settingspeed'>
+				<p>Speed</p> 
+
+		 </div>		
+		 <div class='speeeedradio'>		 	
+		 		<form class='speedradio'>
+		 		<input type="radio"  name="speed" value="veryslow">  very slow<br><br>
+				<input type="radio"  name="speed" value="slow"> slow<br><br>
+				<input type="radio"  name="speed" value="normal"> normal<br><br>
+				<input type="radio"  name="speed" value="fast"> fast<br><br>
+				<input type="radio"  name="speed" value="veryfast"> very fast
+                </form>
+            			
+		</div>
+		<p class='screenfit'>If the game board doesnt fit the screen, please zoom out the page.</p>
+		<div><br><button id='backbutton'>start game</button>
+		</div>
+	</div>
+
+	<div class='frontpage instructionpage'>
+		<div>
+			<p class='head'> Instruction</p>
+			<p>Our Snake is always hungry. Help him get his cookie and bonus milk. Only one cookie appears on the field. Direct him to the cookie. Avoid hitting on the rocks.<br></p>
+			<p class='head'>Bonus</p>
+			<p>Collect milk bottle and fill the milk bar on the right side of the field. Milk bottle appears for every five cookies. But it will last only 8 secs. 
+			   Once you got the milk bottle, one fifth of the milk bar fills up.
+			   Try to collect five milk bottle consequently and fill the milk bar. 
+			   Completed milk bar quenches his thirst and gives you 500 points. If you miss one milk bottle out of 5 then the milk bar falls to zero level. </p>
+			 <p class='head warning'>Warning</p>
+			 <p>Dont go out of the field.
+			 	Be aware of rocks.
+			 	There are less than 15 rocks all over the field.
+			 	</p>	
+		</div>
+		
+		<div><img class='insimage1' src='milkbar.PNG' alt="Snakeboard" height="300" width="35">
+		 <table>
+		 	<tr>
+		 		<td><br><br>Snake:</td>
+		 		<td><br><br><img class='insimage' src='snake.PNG' height="40" width="40"></td>
+		 		
+		 	</tr>
+		 	<tr>
+		 		<td>Cookie:</td>
+		 		<td><img class='insimage' src='cookie.PNG' height="40" width="40"></td>
+		 		<td>10 pts</td>
+		 	</tr>
+		 	<tr>
+		 		<td>Milk:</td>
+		 		<td><img class='insimage' src='milk.PNG' height="40" width="40"></td>
+		 		<td>15 pts</td>
+		 	</tr>
+		 	<tr>
+		 		<td>Rock:</td>
+		 		<td><img class='insimage' src='obstacle.PNG' height="40" width="40"></td>
+		 	</tr>
+		 	 <tr>
+		 		<td colspan="2"><br>Milk bar (filled):</td>
+		 		<td><br>500 pts</td>
+		 	</tr>
+		 	<tr>
+		 		<td colspan="3"><br><button id='instrstartbutton'>Start</button></td>
+		 	</tr>
+		 </table>
+		</div>
+	</div>
+
+	<div class='frontpage startpage'>
+		<img id='logosnake' src="capture.PNG"><br>
+		<p>Hi, Welcome to the Game</p>
+		<button id='frontstartbutton'>Start</button>
+		<button id='frontinstrbutton'>Instruction</button>
+		<button id='frontsettingbutton'>Setting</button><br>
+		<p> If the game board doesnt fit the screen, please zoom out the page</p>
+		<span id='credits'><p id='soundcredit'>credits </p><p class='soundweb'>https://freesound.org and https://www.freesfx.co.uk</p></span>
+		</div>
+	
+	
+
+
+
+
+</div>
+<div><p class='creation'>created by Shummi and Tina</p> </div>
+
+<script type="text/javascript" src="snakeeee.js"></script>
+</body>
+</html>
