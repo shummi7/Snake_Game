@@ -318,6 +318,9 @@ table{
 	align-content:space-between;
 }
 
+.instructionpage button{
+	height:50px;
+}
 .lastpage{
 	position:absolute;
 	background-color:#171322;
@@ -354,7 +357,9 @@ margin-left:30px;
 #comment {
 	text-align:center;
 }
-
+#reloadbutton{
+	height:50px;
+}
 #reloadbutton:hover{
 	color:#FBFAF7;	
 	background-color: #6D06A6;

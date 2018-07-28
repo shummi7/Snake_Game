@@ -149,27 +149,35 @@ backbutton.addEventListener('click',backbuttonfunc,false);
 function keyDownFunc(e){
     switch(e.keyCode){
         case 37:
+        e.preventDefault();
             if (keybdirection!=='right') {
                 keybdirection = 'left';
-               e.preventDefault();}
+               // e.preventDefault();
+             }
             break;
 
         case 39:
+              e.preventDefault();
             if (keybdirection!=='left') {
                 keybdirection = 'right';
-               e.preventDefault();}
+               // e.preventDefault();
+             }
             break;
 
         case 38:
+        e.preventDefault();
             if (keybdirection!=='down'){
                 keybdirection = 'up';
-               e.preventDefault();}
+               // e.preventDefault();
+             }
             break;
 
         case 40:
+        e.preventDefault();
             if (keybdirection!=='up'){
                 keybdirection = 'down';
-               e.preventDefault();}
+               // e.preventDefault();
+             }
             break;
         }
     }
