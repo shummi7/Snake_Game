@@ -334,12 +334,16 @@ table{
 }
 .lastPageTable{
 margin-top:70px;
-	width:250px;
+margin-left:30px;
+	width:450px;
 	height:300px;
 	font-size:22px;
 	background:'';
 	border-collapse: separate;
-    border-spacing: 20px 1px;
+    border-spacing: 60px 1px;
+}
+.lastPageTable td{
+	margin-left:20px;
 }
 #comment {
 	text-align:center;
