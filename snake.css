@@ -238,9 +238,9 @@ border-left:4px solid #18054E;
 }
 
 #logosnake{
-	width:210px;
+	width:190px;
 	height:210px;
-	margin-top:10px;
+	margin-top:10px; 
 	animation: fading 6s ease-out;
 }
 
