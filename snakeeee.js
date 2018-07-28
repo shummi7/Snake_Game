@@ -1,4 +1,4 @@
-var board=document.getElementById('board'); 
+var board=document.getElementById('board');  
 
 var startpage=document.getElementsByClassName('startpage');
 var frontstartbutton=document.getElementById('frontstartbutton');
@@ -150,22 +150,26 @@ function keyDownFunc(e){
     switch(e.keyCode){
         case 37:
             if (keybdirection!=='right') {
-                keybdirection = 'left';}
+                keybdirection = 'left';
+               e.preventDefault();}
             break;
 
         case 39:
             if (keybdirection!=='left') {
-                keybdirection = 'right';}
+                keybdirection = 'right';
+               e.preventDefault();}
             break;
 
         case 38:
             if (keybdirection!=='down'){
-                keybdirection = 'up';}
+                keybdirection = 'up';
+               e.preventDefault();}
             break;
 
         case 40:
             if (keybdirection!=='up'){
-                keybdirection = 'down';}
+                keybdirection = 'down';
+               e.preventDefault();}
             break;
         }
     }

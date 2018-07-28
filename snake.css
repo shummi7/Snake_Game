@@ -6,10 +6,10 @@ body{
 
 .container{
 	position:relative;	
-	width:1300px;
-	height:730px; 
+	width:1100px;
+	height:630px; 
 	margin:auto;
-	margin-top:30px;
+	margin-top:20px;
 	display:flex; 
 	justify-content:center;
 	align-items:center;
@@ -21,10 +21,10 @@ body{
 }
 
 .scoreboard{
-	width:365px;
+	width:250px;
 	height:620px;
-
-	margin:auto;
+/*border:2px solid yellow;*/
+	
 	margin-top:0px;
 	background-color:'';
 	border: 5px solid '';
@@ -35,30 +35,33 @@ body{
 }
 
 .score{
-	margin-top:10px;
-	margin-left:52px;
-	margin-right:20px;
+	margin-top:0px;
+	margin-left:30px;
+	margin-right:10px;
 	color:orangered;
 	font-family: 'PT Mono', monospace;
 	font-weight: 900;
-	font-size: 22px;
-	width: 250px;
-	height:230px;
+	font-size: 20px;
+	width: 195px;
+	height:200px;
 	background-color:#171322;
 	border: 5px solid #333;
 	display:flex;
-	align-items: space-between;
+	align-items: space-around;
 	flex-direction: column;
 
 }
-
+.score span{
+margin-left:7px;
+}
 .barboard{
-	width: 285px;
-	height:710px;
+	width: 150px;
+	height:620px;
 	background-color:'';
 	display:flex;
 	border: 5px solid '';
 	flex-direction: column;
+	/*border:2px solid yellow;*/
 }
 .bartext{
 	margin-left:14px;
@@ -71,8 +74,9 @@ body{
 .bartext p{
 	font-family: 'PT Mono', monospace;
 	color:white;
-	font-size: medium;
 	text-shadow: 0px 0px 5px white;
+	margin-bottom:10px;
+	margin-top:10px;
 	
 }
 .bar{
@@ -100,8 +104,8 @@ body{
     border-top-left-radius: 25px;
 }
 .board{
-	width: 970px;
-	height:700px;	
+	width: 630px;
+	height:600px;	
 	display:flex;
 	flex-wrap:wrap;
 	background-color:#000064;
@@ -113,7 +117,7 @@ body{
 
 .board div{
 	color:#171322;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 900;
 	padding:0.3px;
 	text-align: center;
@@ -134,8 +138,8 @@ body{
 .frontpage {
 	position:absolute;
 	background-color:#171322;
-	width:1300px;
-	height:730px;
+	width:1100px;
+	height:630px;
 	margin:auto;
 	margin-bottom: 0px;
 	border-top:10px solid orangered;
@@ -145,7 +149,7 @@ body{
 
 	font-family: 'PT Mono', monospace;
 	font-weight: 900;
-	font-size:22px;
+	font-size:20px;
 	color:orangered;
 	display:flex;
 	flex-direction: column;
@@ -184,7 +188,7 @@ button{
 	font-family: 'PT Mono', monospace;
 	font-weight: 900;
 	color:#171322;
-	width:190px;
+	width:160px;
 	height:60px;
 	font-size:19px;
 	background-color:orangered;
@@ -234,9 +238,9 @@ border-left:4px solid #18054E;
 }
 
 #logosnake{
-	width:265px;
-	height:275px;
-	margin-top:20px;
+	width:210px;
+	height:210px;
+	margin-top:10px;
 	animation: fading 6s ease-out;
 }
 
@@ -255,11 +259,12 @@ border-left:4px solid #18054E;
 }
 
 .instructionpage div:nth-child(1){
-	width:750px;
-	height:720px;
+	width:550px;
+	height:490px;
 	font-family: 'PT Mono', monospace;
 	font-weight: 900;
-	font-size:19px;
+	padding:10px;
+	font-size:17px;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -273,8 +278,9 @@ border-left:4px solid #18054E;
 
 }
 .head{
-	font-size:22px;
+	font-size:21px;
 	color:limegreen;
+	margin:10px;
 }
 .warning{
 	color:#F8F800;
@@ -283,7 +289,7 @@ border-left:4px solid #18054E;
 
 .instructionpage div:nth-child(2){
 	width:450px;
-	height:720px;
+	height:620px;
 display:flex;
 /*border:2px solid yellow;*/
 flex-direction: row;
@@ -303,10 +309,10 @@ background-color: '';
 table{
 	width:350px;
 	height:300px;
-	font-size:22px;
+	font-size:18px;
 	background:'';
 
-
+/*border:2px solid yellow;*/
 	display:flex;
 	flex-direction: column;
 	align-content:space-between;
@@ -315,8 +321,8 @@ table{
 .lastpage{
 	position:absolute;
 	background-color:#171322;
-	width:1200px;
-	height:630px;
+	width:1000px;
+	height:530px;
 	margin:auto;
 	border-top:10px solid orangered;
 	border-left:10px solid orangered;
@@ -325,7 +331,7 @@ table{
 
 	font-family: 'PT Mono', monospace;
 	font-weight: 900;
-	font-size:22px;
+	font-size:20px;
 	color:orangered;
 	display:flex;
 	flex-direction: column;
@@ -337,7 +343,7 @@ margin-top:70px;
 margin-left:30px;
 	width:450px;
 	height:300px;
-	font-size:22px;
+	font-size:20px;
 	background:'';
 	border-collapse: separate;
     border-spacing: 60px 1px;
@@ -360,8 +366,8 @@ margin-left:30px;
 .settingpage{
 	position:absolute;
 	background-color:#171322;
-	width:1200px;
-	height:630px;
+	width:1000px;
+	height:530px;
 	margin:auto;
 	border-top:10px solid orangered;
 	border-left:10px solid orangered;
@@ -380,7 +386,7 @@ margin-left:30px;
 	margin-top: 20px;
 	width:100px;
 	height:30px;
-	font-size:22px;
+	font-size:20px;
 	background:'';
 	border-collapse: separate;
     border-spacing: 100px 10px;
@@ -392,7 +398,7 @@ margin-left:30px;
 	margin-left: 30px;
 	width:200px;
 	height:300px;
-	font-size:22px;
+	font-size:20px;
 	background:'';
 	border-collapse: separate;
     border-spacing: 100px 10px;
